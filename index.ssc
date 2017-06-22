@@ -26,7 +26,7 @@ if uv.submitx=="yes"
 	s.echo("We have your values, let's convert!")
 end
 
-s.echo("<BR><BR><form>")
+s.echo("<BR><BR>uv.submitx<form>")
 s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
 s.echo("<input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\">")
 s.echo("<input type=\"text\" name=\"ax-shot\" value=\"\" placeholder=\"Shot\">")
