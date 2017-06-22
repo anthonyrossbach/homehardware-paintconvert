@@ -26,8 +26,11 @@ if uv.submitx=="yes"
 	s.echo("<BR><BR>We have your values, let's convert!")
 	//convert to shots, we will convert ounces out after when showing to the user.
 	v.newah=0
+	v.newahounces=0
 	v.newmh=0
+	v.newmhounces=0
 	v.newrh=0
+	v.newrhounces=0
 	
 	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
 	if set uv.axounce
@@ -50,10 +53,24 @@ if uv.submitx=="yes"
 		v.newah+v.add
 	end
 	
+	
+	
 	//Converted show user
-	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newah</div>")
-	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmh</div>")
-	s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrh</div>")
+	if v.newah>0
+		//get ounces
+		v.oc=v.newah
+		v.oc/48
+		v.newahounces=v.oc
+		
+		//remove ounces from shots
+		v.or=voc
+		v.or*48
+		v.newah-v.or
+	end
+	
+	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
+	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
+	s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
 	
 end
 
