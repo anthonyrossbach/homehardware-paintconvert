@@ -26,7 +26,7 @@ if set pv.submit
 	s.echo("We have your values, let's convert!")
 end
 
-s.echo("<BR><BR><form action=\"/login\" method=\"post\">")
+s.echo("<BR><BR><form action=\"/\" method=\"post\">")
 s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
 s.echo("<input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\">")
 s.echo("<input type=\"text\" name=\"ax-shot\" value=\"\" placeholder=\"Shot\">")
