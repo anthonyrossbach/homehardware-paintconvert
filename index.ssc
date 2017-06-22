@@ -22,11 +22,11 @@
 `
 s.echo("This is a simple paint converter for the old AX MX and R colourants to the new AH MH and RH.<BR><BR>Enter the values as needed and it will convert it for you.")
 
-if set pv.submitx
+if set uv.submitx
 	s.echo("We have your values, let's convert!")
 end
 
-s.echo("<BR><BR><form action=\"index.ssc\" method=\"post\">")
+s.echo("<BR><BR><form>")
 s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
 s.echo("<input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\">")
 s.echo("<input type=\"text\" name=\"ax-shot\" value=\"\" placeholder=\"Shot\">")
