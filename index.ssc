@@ -64,6 +64,18 @@ if uv.submitx=="yes"
 			v.newah-48
 		end
 	end
+	if v.newmh>0
+		while v.newmh>=48
+			v.newmhounces+1
+			v.newmh-48
+		end
+	end
+	if v.newrh>0
+		while v.newrh>=48
+			v.newrhounces+1
+			v.newrh-48
+		end
+	end
 	
 	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
 	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
