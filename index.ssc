@@ -34,7 +34,7 @@ s.echo("<input type=\"text\" name=\"ax-halfshot\" value=\"\" placeholder=\"Half 
 s.echo("<input type=\"text\" name=\"ax-quartershot\" value=\"\" placeholder=\"Quarter Shot\">")
 s.echo("</div>")
 
-s.echo("<div style='position:fixed;left:-500px;'><input type=\"text\" name=\"submitx\" value=\"yes\"><div><input type=\"submit\" name=\"submit\" value=\"Convert\">")
+s.echo("<div style='position:fixed;left:-500px;'><input type=\"text\" name=\"submitx\" value=\"yes\"></div><input type=\"submit\" name=\"submit\" value=\"Convert\">")
 s.echo("</form>")
 
 
