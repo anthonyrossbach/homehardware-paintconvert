@@ -37,7 +37,7 @@ if uv.submitx=="yes"
 	end
 	
 	//Converted show user
-	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newah</div>")
+	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newah from uv.axounce</div>")
 	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmh</div>")
 	s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrh</div>")
 	
