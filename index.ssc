@@ -30,8 +30,8 @@ if uv.submitx=="yes"
 	v.newrh=0
 	
 	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
-	if uv.ax-ounce>=1
-		v.add=uv.ax-ounce/2
+	if set uv.axounce
+		v.add=uv.axounce/2
 		v.add*48
 		v.newah+v.add
 	end
@@ -46,24 +46,24 @@ end
 s.echo("<BR><BR><form>")
 
 s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
-s.echo("<input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"ax-shot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"ax-halfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"ax-quartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+s.echo("<input type=\"text\" name=\"axounce\" value=\"\" placeholder=\"Ounce\">")
+s.echo("<input type=\"text\" name=\"axshot\" value=\"\" placeholder=\"Shot\">")
+s.echo("<input type=\"text\" name=\"axhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+s.echo("<input type=\"text\" name=\"axquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
 s.echo("</div>")
 
 s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MX:</text>")
-s.echo("<input type=\"text\" name=\"mx-ounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"mx-shot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"mx-halfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"mx-quartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+s.echo("<input type=\"text\" name=\"mxounce\" value=\"\" placeholder=\"Ounce\">")
+s.echo("<input type=\"text\" name=\"mxshot\" value=\"\" placeholder=\"Shot\">")
+s.echo("<input type=\"text\" name=\"mxhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+s.echo("<input type=\"text\" name=\"mxquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
 s.echo("</div>")
 
 s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>R:</text>")
-s.echo("<input type=\"text\" name=\"r-ounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"r-shot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"r-halfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"r-quartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+s.echo("<input type=\"text\" name=\"rounce\" value=\"\" placeholder=\"Ounce\">")
+s.echo("<input type=\"text\" name=\"rshot\" value=\"\" placeholder=\"Shot\">")
+s.echo("<input type=\"text\" name=\"rhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+s.echo("<input type=\"text\" name=\"rquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
 s.echo("</div>")
 
 s.echo("<div style='position:fixed;left:-500px;'><input type=\"text\" name=\"submitx\" value=\"yes\"></div><input type=\"submit\" name=\"submit\" value=\"Convert\">")
