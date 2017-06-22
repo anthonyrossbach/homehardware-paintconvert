@@ -55,7 +55,7 @@ if uv.submitx=="yes"
 		v.newah+v.add
 	end
 	
-	
+	s.echo(v.newah)
 	
 	//Converted show user
 	if v.newah>0
