@@ -29,6 +29,12 @@ if uv.submitx=="yes"
 	v.newmh=0
 	v.newrh=0
 	
+	if uv.ax-ounce>=1
+		v.add=uv.ax-ounce/2
+		v.add
+		v.newah+
+	end
+	
 	//Converted show user
 	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newah</div>")
 	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmh</div>")
