@@ -185,11 +185,44 @@ if uv.submitx=="yes"
 		end
 		if uv.rounce==2
 			v.newrh+19.25
-			v.newt+0.75
+			v.newt+1.5
 		end
-		if uv.rounce==2
+		if uv.rounce==3
+			v.newrh+28.75
+			v.newt+2.25
+		end
+		if uv.rounce==4
+			v.newrh+38.5
+			v.newt+3
+		end
+		if uv.rounce==5
+			v.newrh+48
+			v.newt+3.75
+		end
+		if uv.rounce==6
+			v.newrh+48
+			v.newrh+9.5
+			v.newt+4.5
+		end
+		if uv.rounce==7
+			v.newrh+48
 			v.newrh+19.25
-			v.newt+0.75
+			v.newt+5.5
+		end
+		if uv.rounce==8
+			v.newrh+48
+			v.newrh+28.75
+			v.newt+6.25
+		end
+		if uv.rounce==9
+			v.newrh+48
+			v.newrh+38.5
+			v.newt+7
+		end
+		if uv.rounce==6
+			v.newrh+48
+			v.newrh+48
+			v.newt+7.75
 		end
 	end
 	if set uv.rshot
