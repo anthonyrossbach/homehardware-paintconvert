@@ -34,12 +34,14 @@ if uv.submitx=="yes"
 	
 	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
 	if set uv.axounce
+		v.add=0
 		v.add=uv.axounce
 		v.add/2
 		v.add*48
 		v.newah+v.add
 	end
 	if set uv.axshot
+		v.add=0
 		v.add=uv.axshot
 		v.add/2
 		v.newah+v.add
