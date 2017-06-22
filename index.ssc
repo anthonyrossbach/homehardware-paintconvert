@@ -67,8 +67,36 @@ if uv.submitx=="yes"
 		v.add*48
 		v.newmh+v.add
 		
+		//convert t time for fun
 		if uv.mxounce==1
 			v.newt+3.25
+		end
+		if uv.mxounce==2
+			v.newt+6.25
+		end
+		if uv.mxounce==3
+			v.newt+9.25
+		end
+		if uv.mxounce==4
+			v.newt+12.5
+		end
+		if uv.mxounce==5
+			v.newt+15.5
+		end
+		if uv.mxounce==6
+			v.newt+18.75
+		end
+		if uv.mxounce==7
+			v.newt+21.75
+		end
+		if uv.mxounce==8
+			v.newt+25
+		end
+		if uv.mxounce==9
+			v.newt+28
+		end
+		if uv.mxounce==10
+			v.newt+31.25
 		end
 	end
 	if set uv.mxshot
