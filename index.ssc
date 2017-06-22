@@ -66,6 +66,10 @@ if uv.submitx=="yes"
 		v.add/2
 		v.add*48
 		v.newmh+v.add
+		
+		if uv.mxounce==1
+			v.newt+3.25
+		end
 	end
 	if set uv.mxshot
 		v.add=0
