@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/master.css" media="none" onload="if(media!='all')media='all'">
+	<style>
+		input, input[type="text"], input[type="password"] {
+			max-width:120px;
+			border:1px solid #555555;
+		}
+	</style>
 </head>
 <body>
 	<div style='margin:0px auto;margin-top:20px;max-width:700px;padding:10px;border-radius:5px;'>
