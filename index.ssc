@@ -142,6 +142,31 @@ if uv.submitx=="yes"
 				v.newt+1.75
 			end
 		end
+		if uv.mxshot>=29
+			if uv.mxshot<=33
+				v.newt+2
+			end
+		end
+		if uv.mxshot>=34
+			if uv.mxshot<=36
+				v.newt+2.25
+			end
+		end
+		if uv.mxshot>=27
+			if uv.mxshot<=40
+				v.newt+2.50
+			end
+		end
+		if uv.mxshot>=41
+			if uv.mxshot<=44
+				v.newt+2.75
+			end
+		end
+		if uv.mxshot>=45
+			if uv.mxshot<=47
+				v.newt+3
+			end
+		end
 	end
 	if set uv.mxhalfshot
 		v.add=0.25
@@ -152,6 +177,30 @@ if uv.submitx=="yes"
 		v.newmh+v.add
 	end
 	
+	//R to RH conversion, it's all over the charts!
+	if set uv.rounce
+		if uv.rounce==1
+			v.newrh+9.5
+			v.newt+0.75
+		end
+		if uv.rounce==2
+			v.newrh+19.25
+			v.newt+0.75
+		end
+		if uv.rounce==2
+			v.newrh+19.25
+			v.newt+0.75
+		end
+	end
+	if set uv.rshot
+		
+	end
+	if set uv.rhalfshot
+		
+	end
+	if set uv.rquartershot
+		
+	end
 	
 	
 	//Converted show user
