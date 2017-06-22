@@ -60,12 +60,14 @@ if uv.submitx=="yes"
 		//get ounces
 		v.oc=v.newah
 		v.oc/48
-		v.newahounces=v.oc
+		v.newahounces=s.number_round(v.oc)
 		
-		//remove ounces from shots
-		v.or=voc
-		v.or*48
-		v.newah-v.or
+		if v.newahounces>=1
+			//remove ounces from shots
+			v.or=voc
+			v.or*48
+			v.newah-v.or
+		end
 	end
 	
 	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
