@@ -57,6 +57,33 @@ if uv.submitx=="yes"
 		v.newah+v.add
 	end
 	
+	
+	
+	//MX is half of MX and some T per for making MH
+	if set uv.mxounce
+		v.add=0
+		v.add=uv.mxounce
+		v.add/2
+		v.add*48
+		v.newmh+v.add
+	end
+	if set uv.mxshot
+		v.add=0
+		v.add=uv.mxshot
+		v.add/2
+		v.newmh+v.add
+	end
+	if set uv.mxhalfshot
+		v.add=0.25
+		v.newmh+v.add
+	end
+	if set uv.mxquartershot
+		v.add=0
+		v.newmh+v.add
+	end
+	
+	
+	
 	//Converted show user
 	if v.newah>0
 		while v.newah>=48
