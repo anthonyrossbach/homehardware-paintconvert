@@ -1,3 +1,30 @@
 //Paint Converter for HH by Anthony Rossbach 2017
-
+`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paint Converter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/master.css" media="none" onload="if(media!='all')media='all'">
+</head>
+<body>
+	<div style='margin:0px auto;margin-top:20px;max-width:700px;padding:10px;border-radius:5px;'>
+`
 s.echo("This is a simple paint converter for the old AX MX and R colourants to the new AH MH and RH.<BR><BR>Enter the values as needed and it will convert it for you.")
+
+if set pv.submit
+
+end
+
+s.echo("<BR><BR><form action=\"/login\" method=\"post\">")
+s.echo("<div><text style='color:orange;'>AX</text>: <input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\"></div>")
+
+
+`
+	</div>
+</body>
+</html>
+`
