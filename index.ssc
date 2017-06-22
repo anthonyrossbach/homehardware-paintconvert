@@ -26,7 +26,12 @@ if set pv.submit
 end
 
 s.echo("<BR><BR><form action=\"/login\" method=\"post\">")
-s.echo("<div><text style='color:orange;'>AX</text>: <input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\"></div>")
+s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
+s.echo("<input type=\"text\" name=\"ax-ounce\" value=\"\" placeholder=\"Ounce\">")
+s.echo("<input type=\"text\" name=\"ax-shot\" value=\"\" placeholder=\"Shot\">")
+s.echo("<input type=\"text\" name=\"ax-halfshot\" value=\"\" placeholder=\"Half Shot\">")
+s.echo("<input type=\"text\" name=\"ax-quartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+s.echo("</div>")
 
 
 `
