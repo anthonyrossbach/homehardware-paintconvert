@@ -219,7 +219,7 @@ if uv.submitx=="yes"
 			v.newrh+38.5
 			v.newt+7
 		end
-		if uv.rounce==6
+		if uv.rounce==10
 			v.newrh+48
 			v.newrh+48
 			v.newt+7.75
