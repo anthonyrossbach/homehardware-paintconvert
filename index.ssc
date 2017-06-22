@@ -88,7 +88,7 @@ if uv.submitx=="yes"
 	s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
 	s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
 	s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
-	s.echo("<div style='padding:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newrounces Y v.newr Shots</div>")
+	s.echo("<div style='padding:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
 	
 end
 
