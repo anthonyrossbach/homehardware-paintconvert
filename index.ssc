@@ -60,24 +60,72 @@ end
 s.echo("<BR><BR><form>")
 
 s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
-s.echo("<input type=\"text\" name=\"axounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"axshot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"axhalfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"axquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+if set uv.axounce
+	s.echo("<input type=\"text\" name=\"axounce\" value=\"uv.axounce\" placeholder=\"Ounces\">")
+else
+	s.echo("<input type=\"text\" name=\"axounce\" value=\"\" placeholder=\"Ounces\">")
+end
+if set uv.axshot
+	s.echo("<input type=\"text\" name=\"axshot\" value=\"uv.axshot\" placeholder=\"Shots\">")
+else
+	s.echo("<input type=\"text\" name=\"axshot\" value=\"\" placeholder=\"Shots\">")
+end
+if set uv.axhalfshot
+	s.echo("<input type=\"text\" name=\"axhalfshot\" value=\"uv.axhalfshot\" placeholder=\"Half Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"axhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+end
+if set uv.axquartershot
+	s.echo("<input type=\"text\" name=\"axquartershot\" value=\"uv.axquartershot\" placeholder=\"Quarter Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"axquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+end
 s.echo("</div>")
 
 s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MX:</text>")
-s.echo("<input type=\"text\" name=\"mxounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"mxshot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"mxhalfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"mxquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+if set uv.mxounce
+	s.echo("<input type=\"text\" name=\"mxounce\" value=\"uv.mxounce\" placeholder=\"Ounces\">")
+else
+	s.echo("<input type=\"text\" name=\"mxounce\" value=\"\" placeholder=\"Ounces\">")
+end
+if set uv.mxshot
+	s.echo("<input type=\"text\" name=\"mxshot\" value=\"uv.mxshot\" placeholder=\"Shots\">")
+else
+	s.echo("<input type=\"text\" name=\"mxshot\" value=\"\" placeholder=\"Shots\">")
+end
+if set uv.mxhalfshot
+	s.echo("<input type=\"text\" name=\"mxhalfshot\" value=\"uv.mxhalfshot\" placeholder=\"Half Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"mxhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+end
+if set uv.mxquartershot
+	s.echo("<input type=\"text\" name=\"mxquartershot\" value=\"uv.mxquartershot\" placeholder=\"Quarter Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"mxquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+end
 s.echo("</div>")
 
 s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>R:</text>")
-s.echo("<input type=\"text\" name=\"rounce\" value=\"\" placeholder=\"Ounce\">")
-s.echo("<input type=\"text\" name=\"rshot\" value=\"\" placeholder=\"Shot\">")
-s.echo("<input type=\"text\" name=\"rhalfshot\" value=\"\" placeholder=\"Half Shot\">")
-s.echo("<input type=\"text\" name=\"rquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+if set uv.rounce
+	s.echo("<input type=\"text\" name=\"rounce\" value=\"uv.rounce\" placeholder=\"Ounces\">")
+else
+	s.echo("<input type=\"text\" name=\"rounce\" value=\"\" placeholder=\"Ounces\">")
+end
+if set uv.rshot
+	s.echo("<input type=\"text\" name=\"rshot\" value=\"uv.rshot\" placeholder=\"Shots\">")
+else
+	s.echo("<input type=\"text\" name=\"rshot\" value=\"\" placeholder=\"Shots\">")
+end
+if set uv.rhalfshot
+	s.echo("<input type=\"text\" name=\"rhalfshot\" value=\"uv.rhalfshot\" placeholder=\"Half Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"rhalfshot\" value=\"\" placeholder=\"Half Shot\">")
+end
+if set uv.rquartershot
+	s.echo("<input type=\"text\" name=\"rquartershot\" value=\"uv.rquartershot\" placeholder=\"Quarter Shot\">")
+else
+	s.echo("<input type=\"text\" name=\"rquartershot\" value=\"\" placeholder=\"Quarter Shot\">")
+end
 s.echo("</div>")
 
 s.echo("<div style='position:fixed;left:-500px;'><input type=\"text\" name=\"submitx\" value=\"yes\"></div><input type=\"submit\" name=\"submit\" value=\"Convert\">")
