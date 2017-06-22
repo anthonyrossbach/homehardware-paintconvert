@@ -104,6 +104,43 @@ if uv.submitx=="yes"
 		v.add=uv.mxshot
 		v.add/2
 		v.newmh+v.add
+		
+		//convert for our t
+		if uv.mxshot>=3
+			if uv.mxshot<=5
+				v.newt+0.25
+			end
+		end
+		if uv.mxshot>=6
+			if uv.mxshot<=9
+				v.newt+0.5
+			end
+		end
+		if uv.mxshot>=10
+			if uv.mxshot<=13
+				v.newt+0.75
+			end
+		end
+		if uv.mxshot>=14
+			if uv.mxshot<=17
+				v.newt+1
+			end
+		end
+		if uv.mxshot>=18
+			if uv.mxshot<=21
+				v.newt+1.25
+			end
+		end
+		if uv.mxshot>=22
+			if uv.mxshot<=25
+				v.newt+1.50
+			end
+		end
+		if uv.mxshot>=26
+			if uv.mxshot<=28
+				v.newt+1.75
+			end
+		end
 	end
 	if set uv.mxhalfshot
 		v.add=0.25
