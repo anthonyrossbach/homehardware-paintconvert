@@ -29,10 +29,11 @@ if uv.submitx=="yes"
 	v.newmh=0
 	v.newrh=0
 	
+	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
 	if uv.ax-ounce>=1
 		v.add=uv.ax-ounce/2
-		v.add
-		v.newah+
+		v.add*48
+		v.newah+v.add
 	end
 	
 	//Converted show user
