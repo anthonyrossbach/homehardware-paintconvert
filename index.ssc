@@ -23,8 +23,6 @@
 <body>
 	<div style='background:#ffffff;margin:0px auto;margin-top:20px;margin-bottom:5px;max-width:700px;padding:10px;border-radius:5px;'>
 `
-s.echo("Enter the values as you see on the can and click convert.")
-
 if uv.submitx=="yes"
 	//convert to shots, we will convert ounces out after when showing to the user.
 	v.newah=0
@@ -392,6 +390,8 @@ if uv.submitx=="yes"
 		s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
 		s.echo("<div style='padding:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
 	end
+else
+	s.echo("Enter the values as you see on the can and click convert.")
 end
 
 s.echo("<BR><BR><form>")
