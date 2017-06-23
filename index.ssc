@@ -565,7 +565,7 @@ if uv.submitx=="yes"
 	
 	if set v.valuesset
 	
-		s.echo("<h2>New Tints <a href='/'><div style='display:inline-block;text-aligh:right;'>Clear<div></a></h2>")
+		s.echo("<h2>New Tints <a href='/'><div style='display:inline-block;text-align:right;'>Clear<div></a></h2>")
 		s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#34495e;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>Tint</div>")
 		s.echo("<input type=\"text\" name=\"ounce\" value=\"Ounces\" disabled>")
 		s.echo("<input type=\"text\" name=\"shot\" value=\"Shots\" disabled>")
