@@ -429,10 +429,10 @@ if uv.submitx=="yes"
 		s.echo("<input type=\"text\" name=\"quartershot\" value=\"Quarter Shot\" disabled>")
 		s.echo("</div>")
 	
-		s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
-		s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
-		s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
-		s.echo("<div style='padding:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
+		s.echo("<div style='padding-bottom:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
+		s.echo("<div style='padding-bottom:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
+		s.echo("<div style='padding-bottom:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
+		s.echo("<div style='padding-bottom:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
 	end
 else
 	s.echo("Enter the values as you see on the can and click convert.")
@@ -449,7 +449,7 @@ s.echo("</div>")
 
 s.echo("<form>")
 
-s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#f39c12;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>AX</div>")
+s.echo("<div style='padding-bottom:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#f39c12;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>AX</div>")
 if set uv.axounce
 	s.echo("<input type=\"text\" name=\"axounce\" value=\"uv.axounce\" placeholder=\"Ounces\">")
 else
@@ -472,7 +472,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#8e44ad;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>MX</div>")
+s.echo("<div style='padding-bottom:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#8e44ad;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>MX</div>")
 if set uv.mxounce
 	s.echo("<input type=\"text\" name=\"mxounce\" value=\"uv.mxounce\" placeholder=\"Ounces\">")
 else
@@ -495,7 +495,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#e74c3c;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>R</div>")
+s.echo("<div style='padding-bottom:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#e74c3c;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>R</div>")
 if set uv.rounce
 	s.echo("<input type=\"text\" name=\"rounce\" value=\"uv.rounce\" placeholder=\"Ounces\">")
 else
