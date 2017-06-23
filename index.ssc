@@ -419,7 +419,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#f39c12;border-radius:5px;text-align:center;padding:'>MX</div>")
+s.echo("<div style='padding:10px;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#8e44ad;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>MX</div>")
 if set uv.mxounce
 	s.echo("<input type=\"text\" name=\"mxounce\" value=\"uv.mxounce\" placeholder=\"Ounces\">")
 else
@@ -442,7 +442,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;'><text style='width:50px;color:red;padding-right:10px;'>R:</text>")
+s.echo("<div style='padding:10px;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#e74c3c;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>R</div>")
 if set uv.rounce
 	s.echo("<input type=\"text\" name=\"rounce\" value=\"uv.rounce\" placeholder=\"Ounces\">")
 else
