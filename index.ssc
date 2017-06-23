@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="//assets.nodehost.ca/css/master.css" media="none" onload="if(media!='all')media='all'">
 	<style>
+		body{
+			background:#2980b9;
+		}
 		input, input[type="text"], input[type="password"] {
 			max-width:120px;
 			border:1px solid #555555;
@@ -18,12 +21,11 @@
 	</style>
 </head>
 <body>
-	<div style='margin:0px auto;margin-top:20px;max-width:700px;padding:10px;border-radius:5px;'>
+	<div style='background:#ffffff;margin:0px auto;margin-top:20px;margin-bottom:5px;max-width:700px;padding:10px;border-radius:5px;'>
 `
 s.echo("Enter the values as you see on the can and click convert.")
 
 if uv.submitx=="yes"
-	s.echo("<BR><BR>We have your values, let's convert!")
 	//convert to shots, we will convert ounces out after when showing to the user.
 	v.newah=0
 	v.newahounces=0
@@ -394,7 +396,7 @@ end
 
 s.echo("<BR><BR><form>")
 
-s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AX:</text>")
+s.echo("<div style='padding:10px;'><text style='width:50px;color:orange;padding-right:10px;'>AX:</text>")
 if set uv.axounce
 	s.echo("<input type=\"text\" name=\"axounce\" value=\"uv.axounce\" placeholder=\"Ounces\">")
 else
@@ -417,7 +419,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MX:</text>")
+s.echo("<div style='padding:10px;'><text style='width:50px;color:purple;padding-right:10px;'>MX:</text>")
 if set uv.mxounce
 	s.echo("<input type=\"text\" name=\"mxounce\" value=\"uv.mxounce\" placeholder=\"Ounces\">")
 else
@@ -440,7 +442,7 @@ else
 end
 s.echo("</div>")
 
-s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>R:</text>")
+s.echo("<div style='padding:10px;'><text style='width:50px;color:red;padding-right:10px;'>R:</text>")
 if set uv.rounce
 	s.echo("<input type=\"text\" name=\"rounce\" value=\"uv.rounce\" placeholder=\"Ounces\">")
 else
