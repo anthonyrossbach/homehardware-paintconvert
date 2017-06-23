@@ -20,7 +20,7 @@
 <body>
 	<div style='margin:0px auto;margin-top:20px;max-width:700px;padding:10px;border-radius:5px;'>
 `
-s.echo("This is a simple paint converter for the old AX MX and R colourants to the new AH MH and RH.<BR><BR>Enter the values as needed and it will convert it for you.")
+s.echo("Enter the values as you see on the can and click convert.")
 
 if uv.submitx=="yes"
 	s.echo("<BR><BR>We have your values, let's convert!")
@@ -34,6 +34,17 @@ if uv.submitx=="yes"
 	v.newt=0
 	v.newtounces=0
 	v.valuesset=true
+	v.warning=false
+	
+	if uv.axounce>10
+		v.warning="We cant convert more then 10 ounces at this time"
+	end
+	if uv.mxounce>10
+		v.warning="We cant convert more then 10 ounces at this time"
+	end
+	if uv.rounce>10
+		v.warning="We cant convert more then 10 ounces at this time"
+	end
 	
 	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
 	if set uv.axounce
@@ -57,8 +68,6 @@ if uv.submitx=="yes"
 		v.add=0
 		v.newah+v.add
 	end
-	
-	
 	
 	//MX is half of MX and some T per for making MH
 	if set uv.mxounce
@@ -369,6 +378,10 @@ if uv.submitx=="yes"
 			v.newtounces+1
 			v.newt-48
 		end
+	end
+	
+	if not v.warning==false
+		s.echo("<div style='background:#e74c3c;color:#ffffff;padding:5px;border-radius:5px;margin-bottom:10px;'>v.warning</div>")
 	end
 	
 	if set v.valuesset
