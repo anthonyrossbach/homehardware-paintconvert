@@ -408,14 +408,14 @@ if uv.submitx=="yes"
 	
 	
 	//Convert AH for display reasons to math the ColourDesigner program
-	if v.newah>0
+	if v.newah>=0.25
 		while v.newah>=48
 			v.newahounces+1
 			v.newah-48
 		end
 	end
 	//This block converts to half and quarter shots based on size
-	if v.newah>0
+	if v.newah>=0.25
 		v.rt=v.newah
 		v.ra=v.rt
 		if v.rt>=10
@@ -433,15 +433,15 @@ if uv.submitx=="yes"
 		v.newah=v.rb
 	end
 	
-	//Convert AH for display reasons to math the ColourDesigner program
-	if v.newmh>0
+	//Convert MH for display reasons to math the ColourDesigner program
+	if v.newmh>=0.25
 		while v.newmh>=48
 			v.newmhounces+1
 			v.newmh-48
 		end
 	end
 	//This block converts to half and quarter shots based on size
-	if v.newmh>0
+	if v.newmh>=0.25
 		v.rt=v.newmh
 		v.ra=v.rt
 		if v.rt>=10
@@ -459,15 +459,15 @@ if uv.submitx=="yes"
 		v.newmh=v.rb
 	end
 	
-	//Convert AH for display reasons to math the ColourDesigner program
-	if v.newrh>0
+	//Convert RH for display reasons to math the ColourDesigner program
+	if v.newrh>=0.25
 		while v.newrh>=48
 			v.newrhounces+1
 			v.newrh-48
 		end
 	end
 	//This block converts to half and quarter shots based on size
-	if v.newrh>0
+	if v.newrh>=0.25
 		v.rt=v.newrh
 		v.ra=v.rt
 		if v.rt>=10
@@ -485,15 +485,15 @@ if uv.submitx=="yes"
 		v.newrh=v.rb
 	end
 	
-	//Convert AH for display reasons to math the ColourDesigner program
-	if v.newt>0
+	//Convert T for display reasons to math the ColourDesigner program
+	if v.newt>=0.25
 		while v.newt>=48
 			v.newtounces+1
 			v.newt-48
 		end
 	end
 	//This block converts to half and quarter shots based on size
-	if v.newt>0
+	if v.newt>=0.25
 		v.rt=v.newt
 		v.ra=v.rt
 		if v.rt>=10
