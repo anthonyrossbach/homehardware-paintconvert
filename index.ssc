@@ -407,6 +407,109 @@ if uv.submitx=="yes"
 	s.echo("<div style='padding-bottom:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
 	
 	
+	//Convert AH for display reasons to math the ColourDesigner program
+	if v.newah>0
+		while v.newah>=48
+			v.newahounces+1
+			v.newah-48
+		end
+	end
+	//This block converts to half and quarter shots based on size
+	if v.newah>0
+		v.rt=v.newah
+		v.ra=v.rt
+		if v.rt>=10
+			v.rb=s.string_trim(v.rt,2)
+		else
+			v.rb=s.string_trim(v.rt,1)
+		end
+		v.ra-v.rb
+		if v.ra==0.5
+			v.newahhalfshot=1
+		end
+		if v.ra==0.25
+			v.newahquartershot=1
+		end
+		v.newah=v.rb
+	end
+	
+	//Convert AH for display reasons to math the ColourDesigner program
+	if v.newmh>0
+		while v.newmh>=48
+			v.newmhounces+1
+			v.newmh-48
+		end
+	end
+	//This block converts to half and quarter shots based on size
+	if v.newmh>0
+		v.rt=v.newmh
+		v.ra=v.rt
+		if v.rt>=10
+			v.rb=s.string_trim(v.rt,2)
+		else
+			v.rb=s.string_trim(v.rt,1)
+		end
+		v.ra-v.rb
+		if v.ra==0.5
+			v.newmhhalfshot=1
+		end
+		if v.ra==0.25
+			v.newmhquartershot=1
+		end
+		v.newmh=v.rb
+	end
+	
+	//Convert AH for display reasons to math the ColourDesigner program
+	if v.newrh>0
+		while v.newrh>=48
+			v.newrhounces+1
+			v.newrh-48
+		end
+	end
+	//This block converts to half and quarter shots based on size
+	if v.newrh>0
+		v.rt=v.newrh
+		v.ra=v.rt
+		if v.rt>=10
+			v.rb=s.string_trim(v.rt,2)
+		else
+			v.rb=s.string_trim(v.rt,1)
+		end
+		v.ra-v.rb
+		if v.ra==0.5
+			v.newrhhalfshot=1
+		end
+		if v.ra==0.25
+			v.newrhquartershot=1
+		end
+		v.newrh=v.rb
+	end
+	
+	//Convert AH for display reasons to math the ColourDesigner program
+	if v.newt>0
+		while v.newt>=48
+			v.newtounces+1
+			v.newt-48
+		end
+	end
+	//This block converts to half and quarter shots based on size
+	if v.newt>0
+		v.rt=v.newt
+		v.ra=v.rt
+		if v.rt>=10
+			v.rb=s.string_trim(v.rt,2)
+		else
+			v.rb=s.string_trim(v.rt,1)
+		end
+		v.ra-v.rb
+		if v.ra==0.5
+			v.newthalfshot=1
+		end
+		if v.ra==0.25
+			v.newtquartershot=1
+		end
+		v.newt=v.rb
+	end
 	
 	
 	if not v.warning==false
