@@ -226,13 +226,122 @@ if uv.submitx=="yes"
 		end
 	end
 	if set uv.rshot
-		
+		if uv.rshot==1
+			v.newrh+0.25
+		end
+		if uv.rshot==2
+			v.newrh+0.50
+		end
+		if uv.rshot==3
+			v.newrh+0.50
+		end
+		if uv.rshot==4
+			v.newrh+0.75
+		end
+		if uv.rshot==5
+			v.newrh+1
+		end
+		if uv.rshot==6
+			v.newrh+1.25
+		end
+		if uv.rshot==7
+			v.newrh+1.5
+		end
+		if uv.rshot==8
+			v.newrh+1.5
+		end
+		if uv.rshot==9
+			v.newrh+1.5
+		end
+		if uv.rshot==10
+			v.newrh+2
+		end
+		if uv.rshot==11
+			v.newrh+2.25
+		end
+		if uv.rshot==12
+			v.newrh+2.5
+		end
+		if uv.rshot==13
+			v.newrh+2.5
+		end
+		if uv.rshot==14
+			v.newrh+2.75
+		end
+		if uv.rshot==15
+			v.newrh+3
+		end
+		if uv.rshot==16
+			v.newrh+3.25
+		end
+		if uv.rshot==17
+			v.newrh+3.5
+		end
+		if uv.rshot==18
+			v.newrh+3.5
+		end
+		if uv.rshot==19
+			v.newrh+3.75
+		end
+		if uv.rshot==20
+			v.newrh+4
+		end
+		if uv.rshot==21
+			v.newrh+4.25
+		end
+		if uv.rshot==22
+			v.newrh+4.5
+		end
+		if uv.rshot==23
+			v.newrh+4.5
+		end
+		if uv.rshot==24
+			v.newrh+4.75
+		end
+		if uv.rshot==25
+			v.newrh+5
+		end
+		if uv.rshot==26
+			v.newrh+5.25
+		end
+		if uv.rshot==27
+			v.newrh+5.5
+		end
+		if uv.rshot==28
+			v.newrh+5.5
+		end
+		if uv.rshot==29
+			v.newrh+5.75
+		end
+		if uv.rshot==30
+			v.newrh+6
+		end
+		if uv.rshot==31
+			v.newrh+6.25
+		end
+		if uv.rshot==32
+			v.newrh+6.5
+		end
+		if uv.rshot==33
+			v.newrh+6.5
+		end
+		if uv.rshot==34
+			v.newrh+6.75
+		end
+		if uv.rshot==35
+			v.newrh+7
+		end
+		if uv.rshot==26
+			v.newrh+7.25
+		end
 	end
 	if set uv.rhalfshot
-		
+		v.add=0
+		v.newrh+v.add
 	end
 	if set uv.rquartershot
-		
+		v.add=0
+		v.newrh+v.add
 	end
 	
 	
