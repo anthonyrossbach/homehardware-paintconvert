@@ -45,6 +45,42 @@ if uv.submitx=="yes"
 	if uv.rounce>10
 		v.warning="We cant convert more then 10 ounces at this time"
 	end
+	if uv.axhalfshot>1
+		v.warning="The value for AX Half Shot was invalid, we fixed it for you"
+		uv.axhalfshot=1
+	end
+	if uv.mxhalfshot>1
+		v.warning="The value for MX Half Shot was invalid, we fixed it for you"
+		uv.mxhalfshot=1
+	end
+	if uv.rhalfshot>1
+		v.warning="The value for R Half Shot was invalid, we fixed it for you"
+		uv.rhalfshot=1
+	end
+	if uv.axquartershot>1
+		v.warning="The value for AX Quarter Shot was invalid, we fixed it for you"
+		uv.axquartershot=1
+	end
+	if uv.mxquartershot>1
+		v.warning="The value for MX Quarter Shot was invalid, we fixed it for you"
+		uv.mxquartershot=1
+	end
+	if uv.rquartershot>1
+		v.warning="The value for R Quarter Shot was invalid, we fixed it for you"
+		uv.rquartershot=1
+	end
+	if uv.axshot>47
+		v.warning="The value for AX Shots was invalid, we fixed it for you (the max shots is 47 as 48 is an ounce)"
+		uv.axshot=47
+	end
+	if uv.mxshot>47
+		v.warning="The value for MX Shots was invalid, we fixed it for you (the max shots is 47 as 48 is an ounce)"
+		uv.mxshot=47
+	end
+	if uv.rshot>47
+		v.warning="The value for R Shots was invalid, we fixed it for you (the max shots is 47 as 48 is an ounce)"
+		uv.rshot=47
+	end
 	
 	//AX is simple, to convert is a pure half tint ammount, but we will also convert to shots!
 	if set uv.axounce
@@ -385,6 +421,14 @@ if uv.submitx=="yes"
 	end
 	
 	if set v.valuesset
+	
+		s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#34495e;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'></div>")
+		s.echo("<input type=\"text\" name=\"ounce\" value=\"x\" placeholder=\"Ounces\" disabled>")
+		s.echo("<input type=\"text\" name=\"shot\" value=\"x\" placeholder=\"Shots\" disabled>")
+		s.echo("<input type=\"text\" name=\"halfshot\" value=\"x\" placeholder=\"Half Shot\" disabled>")
+		s.echo("<input type=\"text\" name=\"quartershot\" value=\"x\" placeholder=\"Quarter Shot\" disabled>")
+		s.echo("</div>")
+	
 		s.echo("<div style='padding:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
 		s.echo("<div style='padding:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
 		s.echo("<div style='padding:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
@@ -394,7 +438,16 @@ else
 	s.echo("Enter the values as you see on the can and click convert.")
 end
 
-s.echo("<BR><BR><form>")
+s.echo("<BR><BR>")
+
+s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#34495e;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'></div>")
+s.echo("<input type=\"text\" name=\"ounce\" value=\"x\" placeholder=\"Ounces\" disabled>")
+s.echo("<input type=\"text\" name=\"shot\" value=\"x\" placeholder=\"Shots\" disabled>")
+s.echo("<input type=\"text\" name=\"halfshot\" value=\"x\" placeholder=\"Half Shot\" disabled>")
+s.echo("<input type=\"text\" name=\"quartershot\" value=\"x\" placeholder=\"Quarter Shot\" disabled>")
+s.echo("</div>")
+
+s.echo("<form>")
 
 s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#f39c12;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>AX</div>")
 if set uv.axounce
