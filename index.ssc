@@ -405,6 +405,24 @@ if uv.submitx=="yes"
 			v.newah-48
 		end
 	end
+	if v.newah>0
+		v.rt=v.newah
+		v.ra=v.rt
+		if v.rt>=10
+			v.rb=s.string_trim(v.rt,2)
+		else
+			v.rb=s.string_trim(v.rt,1)
+		end
+		v.ra-v.rb
+		if v.ra==0.5
+			v.newahhalfshot=1
+		end
+		if v.ra==0.25
+			v.newahquartershot=1
+		end
+		v.newah=v.rb
+	end
+	
 	if v.newmh>0
 		while v.newmh>=48
 			v.newmhounces+1
