@@ -1,4 +1,9 @@
 //Paint Converter for HH by Anthony Rossbach 2017
+//I work on the Penticton HomeHardware paint department and this was created in SimpleScript (a lanuge I created actualy)
+//This tool is for all department staff or people with custom cans that need conversion from old values
+//This is a lot easer than the chart for new people, but also non normal paint people, Also some values in R where incorrectly rounded
+//In the chart we where given for 3Y R to RH for example is 28.8 and the system can only take quarters so it should be 28.75.
+//Things like this are corrected. Feel free if yo find bugs message me directly me@anthonys.space or phone the Penticton HH.
 `
 <!DOCTYPE html>
 <html lang="en">
@@ -387,8 +392,57 @@ if uv.submitx=="yes"
 		if uv.rshot==35
 			v.newrh+7
 		end
-		if uv.rshot==26
+		if uv.rshot==36
 			v.newrh+7.25
+		end
+		if uv.rshot==37
+			v.newrh+7.5
+		end
+		if uv.rshot==38
+			v.newrh+7.5
+		end
+		if uv.rshot==39
+			v.newrh+7.75
+		end
+		if uv.rshot==40
+			v.newrh+8
+		end
+		if uv.rshot==41
+			v.newrh+8.25
+		end
+		if uv.rshot==42
+			v.newrh+8.5
+		end
+		if uv.rshot==43
+			v.newrh+8.5
+		end
+		if uv.rshot==44
+			v.newrh+9
+		end
+		if uv.rshot==45
+			v.newrh+9
+		end
+		if uv.rshot==46
+			v.newrh+9.25
+		end
+		if uv.rshot==47
+			v.newrh+9.5
+		end
+		//convert now for the T in shots section, its a larger range so thats good
+		if uv.rshot>=8
+			if uv.rshot<=23
+				v.newt+0.25
+			end
+		end
+		if uv.rshot>=24
+			if uv.rshot<=39
+				v.newt+0.5
+			end
+		end
+		if uv.rshot>=40
+			if uv.rshot<=47
+				v.newt+0.75
+			end
 		end
 	end
 	if set uv.rhalfshot
@@ -399,13 +453,6 @@ if uv.submitx=="yes"
 		v.add=0
 		v.newrh+v.add
 	end
-	
-	
-	s.echo("<div style='padding-bottom:10px;'><text style='color:orange;padding-right:10px;'>AH: </text>v.newahounces Y v.newah Shots</div>")
-	s.echo("<div style='padding-bottom:10px;'><text style='color:purple;padding-right:10px;'>MH: </text>v.newmhounces Y v.newmh Shots</div>")
-	s.echo("<div style='padding-bottom:10px;'><text style='color:red;padding-right:10px;'>RH: </text>v.newrhounces Y v.newrh Shots</div>")
-	s.echo("<div style='padding-bottom:10px;'><text style='color:yellow;padding-right:10px;'>T: </text>v.newtounces Y v.newt Shots</div>")
-	
 	
 	//Convert AH for display reasons to math the ColourDesigner program
 	if v.newah>=0.25
@@ -518,6 +565,7 @@ if uv.submitx=="yes"
 	
 	if set v.valuesset
 	
+		s.echo("<h2>New Tints</h2>")
 		s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#34495e;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>Tint</div>")
 		s.echo("<input type=\"text\" name=\"ounce\" value=\"Ounces\" disabled>")
 		s.echo("<input type=\"text\" name=\"shot\" value=\"Shots\" disabled>")
@@ -554,11 +602,10 @@ if uv.submitx=="yes"
 		s.echo("</div>")
 	end
 else
-	s.echo("Enter the values as you see on the can and click convert.")
+	s.echo("Enter the values as you see on the can and click convert. This was made by <a href='https://github.com/anthonyrossbach/homehardware_paintconvert' target='_new'>Anthony</a>.")
 end
 
-s.echo("<BR><BR>")
-
+s.echo("<h2>Old</h2>")
 s.echo("<div style='padding:10px;text-align:center;'><div style='display:inline-block;width:50px;font-weight:bold;color:#ffffff;margin-right:10px;background:#34495e;border-radius:5px;text-align:center;font-size: 14px;padding: 10px;padding-top: 15px;padding-bottom: 15px;'>Tint</div>")
 s.echo("<input type=\"text\" name=\"ounce\" value=\"Ounces\" disabled>")
 s.echo("<input type=\"text\" name=\"shot\" value=\"Shots\" disabled>")
